@@ -1,0 +1,26 @@
+class Car {
+    park() {
+        return 'parked';
+    }
+    drive() {
+        return 'running';
+    }
+}
+
+// describe/it ('Test Description', ()=>{it statements})
+
+let car; // Because if we declare and assign car in before each statement, it will not be accessible to 'it' blocks
+//due to block scope
+
+beforeEach(()=>{
+    car = new Car();
+}); // Runs before each 'it' statement
+
+describe('Car',()=>{
+    it('Can Park',()=>{
+        assert.equal(car.park(),'parked')
+    })
+    it('Can Drive',()=>{
+        assert.equal(car.drive(),'running')
+    })
+})
