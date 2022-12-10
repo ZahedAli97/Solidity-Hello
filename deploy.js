@@ -5,7 +5,7 @@ const { interface, bytecode } = require("./compile"); // interface is  abi
 // infura goerli key - https://goerli.infura.io/v3/e11c628ecfa348c0af37bcbb8724b95e
 
 const provider = new HDWalletProvider(
-  "puzzle marriage drink wear cattle relax anxiety primary emotion head stamp snow",
+  "",
   "https://goerli.infura.io/v3/e11c628ecfa348c0af37bcbb8724b95e"
 ); // We pass two arguments to this instance simultaneously, 1 is account pneumonic
 // that we create for goerli and another is the infura test network goerli api
